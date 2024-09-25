@@ -6,7 +6,7 @@ import { IoMenu } from "react-icons/io5";
 import { Cart } from "./Cart";
 import { CartBar } from "../cartBar/Cart";
 import { Hamburguer } from "./Hamburguer";
-import { api } from "../../axios/axiosConfig";  // Importe o api aqui
+import { api } from "../../axios/axiosConfig";
 
 function Icons() {
   const [isCartOpen, setIsCartOpen] = useState(false);

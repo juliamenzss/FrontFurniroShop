@@ -78,8 +78,8 @@ function Description({
             <div className="hidden lg:block border-l sm:border-l-1 h-6 mx-auto my-4 border-gray-light"></div>
             <p className="text-gray-light text-xs">5 Customer Review</p>
           </span>
-          <span className="w-96">
-            <p className="text-xs">{longDescription}</p>
+          <span className="w-80 py-8">
+            <p className="text-xs ">{longDescription}</p>
           </span>
           <div className="flex flex-col items-start justify-start">
             <p className="text-base text-gray-light py-2">Size</p>

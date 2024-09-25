@@ -18,7 +18,7 @@ function ProductDetails() {
   useEffect(() => {
       const fetchData = async () => {
           try {
-              const productResponse = await fetch(`http://localhost:3000/${id}`);
+              const productResponse = await fetch(`http://localhost:3000/products/id/${id}`);
               if (!productResponse.ok) {
                   throw new Error('Network response was not ok');
               }
@@ -40,7 +40,6 @@ function ProductDetails() {
   if(productData.productSkus && productData.productSkus.length > 0) {
     dispatchEvent(setProductId({ id: productData.id, skuId: productData.productSkus[0].id }));
   }
-console.log(productData)
   const skuData = productData.product.productSkus.map(sku => ({
     color: sku.color,
     size: sku.size,
@@ -60,6 +59,7 @@ console.log(productData)
       <Image 
         img={productData.product.image}
         skus={skuData}
+        
       />
       <Description 
         name={productData.product.name}

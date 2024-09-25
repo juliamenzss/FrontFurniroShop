@@ -22,8 +22,7 @@ function CartBar({ click }) {
         <Bottom />
             
         </div>
-        {/* <div className="fixed top-0 left-0 h-14 w-96 bg-white"> */}
-        {/* </div> */}
+    
       </div>
     </div>
   );

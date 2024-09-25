@@ -29,7 +29,7 @@ function Product() {
             <span className="flex flex-row relative">
             <h1 className="text-sm font-medium">{item.name}</h1>
             <button  className="flex items-center justify-center absolute bottom-0 -right-24 md:-right-16 top-0" onClick={() => dispatch(removeProduct(item.productSkuId))}>
-              <img src={RemoveProduct} alt="" />
+              <img src={RemoveProduct} alt="remove icon" className="h-4 w-4"/>
             </button>
 
             </span>
@@ -37,7 +37,7 @@ function Product() {
 
               <h3>{item.quantity}</h3>
               <h3 className="font-light text-sm px-1">x</h3>
-              <h3 className="text-caramel font-medium text-xs">
+              <h3 className="text-caramel font-medium text-sm">
                 {item.discountPrice ? item.discountPrice : item.price}
               </h3>
             </div>

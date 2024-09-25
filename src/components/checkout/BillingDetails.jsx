@@ -121,18 +121,16 @@ function BillingDetails() {
                       Rs. {item.price * item.quantity}
                     </td>
                   </tr>
+                  <tr>
+                    <td className="pl-10 sm:px-6 py-3 sm:py-4 text-base font-bold">
+                      Total
+                    </td>
+                    <td className="pr-10 sm:px-6 py-3 sm:py-4 text-lg font-semibold text-right text-caramel">
+                    Rs. {total}
+                    </td>
+                  </tr>
                 </>
               ))}
-              <div className="flex space-x-20">
-
-              <h1 className="pl-10 sm:px-6 py-3 sm:py-4 text-sm sm:text-base font-medium">
-                Total
-              </h1>
-
-              <h1 className="px-10 text-base sm:px-6 py-3 sm:py-4 text-right sm:text-lg font-semibold text-caramel flex-row flex">
-                Rs. {total}
-              </h1>
-              </div>
             </tbody>
           </table>
 

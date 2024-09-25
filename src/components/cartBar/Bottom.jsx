@@ -40,7 +40,7 @@ function Bottom() {
     <div>
       <div className="border-b opacity-20 w-80 absolute"></div>
       <div className="mr-2">
-        <div className="m-4 flex py-4">
+        <div className="m-4 flex py-6">
           <button
             onClick={handleNavCart}
             className="px-6 py-1 border rounded-full text-xs flex transition hover:bg-caramel hover:text-white"
@@ -51,7 +51,7 @@ function Bottom() {
             onClick={handleCheckout}
             className="px-6 py-1 border rounded-full text-xs flex transition hover:bg-caramel hover:text-white"
           >
-            {loggedUser ? "Checkout" : "Login to Checkout"}
+            {loggedUser ? "Checkout" : "Checkout"}
           </button>
           <button className="px-6 py-1 border rounded-full text-xs flex transition hover:bg-caramel hover:text-white">
             Comparison

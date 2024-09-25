@@ -6,7 +6,7 @@ const initialSortByName = null;
 const initialSortByPrice = null;
 
 const initialState = {
-  baseURL: `http://localhost:3000/sorted?page=${initialPage}&pageSize=${initialPageSize}`,
+  baseURL: `http://localhost:3000/products`,
   page: initialPage,
   pageSize: initialPageSize,
   sortByName: initialSortByName,
@@ -40,7 +40,7 @@ const URLReducer = createSlice({
 });
 
 function buildURL(state) {
-  let url = `http://localhost:3000/sorted?page=${state.page}&pageSize=${state.pageSize}`;
+  let url = `http://localhost:3000/products?page=${state.page}&pageSize=${state.pageSize}`;
 
   if (state.sortByName) {
     url += `&sortByName=${state.sortByName}`;
@@ -52,6 +52,8 @@ function buildURL(state) {
 
   return url;
 }
+
+
 
 export const { setBaseUrl, setPage, setPageSize, setSortByName, setSortByPrice } = URLReducer.actions;
 export default URLReducer.reducer;

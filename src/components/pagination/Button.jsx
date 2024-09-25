@@ -30,7 +30,6 @@ function Button() {
   }
 
   useEffect(() => {
-    // const newUrl = `http://localhost:3000/sorted?page=${page}&pageSize=16`;
     dispatch(setPage(page));
   }, [page]);
 

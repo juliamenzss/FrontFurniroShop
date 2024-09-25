@@ -23,7 +23,7 @@ export default {
         'silver-gray': '#F4F5F7',
         'caramel': '#B88E2F',
         'green': '#3A5B22',
-        'blue': '#816DFA',
+        'Blue': '#816DFA',
         'red-light': '#E97171',
         'tiffany': '#2EC1AC',
       },

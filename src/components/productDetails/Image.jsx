@@ -1,4 +1,3 @@
-import Syltherine from "../../assets/menu/syltherine.png";
 function Image({img }) {
     return (
       <section className="flex flex-row ">
