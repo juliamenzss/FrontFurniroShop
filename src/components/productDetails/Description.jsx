@@ -79,7 +79,7 @@ function Description({
             <p className="text-gray-light text-xs">5 Customer Review</p>
           </span>
           <span className="w-80 py-8">
-            <p className="text-xs ">{longDescription}</p>
+            <p className="text-xs w-64 md:w-72">{longDescription}</p>
           </span>
           <div className="flex flex-col items-start justify-start">
             <p className="text-base text-gray-light py-2">Size</p>
@@ -143,9 +143,9 @@ function Description({
               </div>
 
 
-              <div className="border rounded-xl h-12 w-40 flex items-center justify-center
+              <div className="h-12 w-24 md:h-12 md:w-40 border rounded-xl flex items-center justify-center
                bg-white transition  hover:bg-caramel
-                hover:text-white  font-semibold">
+                hover:text-white text-sm md:text-base font-semibold">
                 <button onClick={handleAddToCart} className="">Add to Cart</button>
               </div>
 
@@ -154,7 +154,7 @@ function Description({
 
             <div className="hidden lg:block sm:border-t border-opacity-40 h-10 w-96 mx-auto my-4 border-gray-light justify-center items-center sm:flex"></div>
             <table className="table-auto w-full text-left max-w-md mx-auto flex items-start justify-start  text-gray-light ">
-              <tbody className="">
+              <tbody className="text-sm">
                 <tr>
                   <td className="pr-4 py-2">SKU</td>
                   <td>: SS001</td>

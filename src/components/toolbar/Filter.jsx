@@ -7,19 +7,19 @@ function Filter() {
   const handleUrl = (e) => {
     switch (e.target.id) {
       case "lowToHigh":
-        dispatch(setSortByPrice('asc'));
+        dispatch(setSortByPrice("asc"));
 
         break;
       case "highToLow":
-        dispatch(setSortByPrice('desc'));
+        dispatch(setSortByPrice("desc"));
 
         break;
       case "aToZ":
-        dispatch(setSortByName('asc'));
+        dispatch(setSortByName("asc"));
 
         break;
       case "zToA":
-        dispatch(setSortByName('desc'));
+        dispatch(setSortByName("desc"));
         break;
     }
   };
@@ -33,6 +33,7 @@ function Filter() {
             type="radio"
             name="order"
             onChange={handleUrl}
+            className="cursor-pointer"
           />
           <label htmlFor="lowToHigh">Low to High</label>
         </span>
@@ -42,6 +43,7 @@ function Filter() {
             type="radio"
             name="order"
             onChange={handleUrl}
+            className="cursor-pointer"
           />
           <label htmlFor="highToLow">High to Low</label>
         </span>
@@ -50,11 +52,23 @@ function Filter() {
 
       <div className="flex flex-col gap-4 pr-2">
         <span className="flex flex-row gap-2">
-          <input id="aToZ" type="radio" name="order" onChange={handleUrl} />
+          <input
+            id="aToZ"
+            type="radio"
+            name="order"
+            onChange={handleUrl}
+            className="cursor-pointer"
+          />
           <label htmlFor="aToZ">A to Z</label>
         </span>
         <span className="flex flex-row gap-2">
-          <input id="zToA" type="radio" name="order" onChange={handleUrl} />
+          <input
+            id="zToA"
+            type="radio"
+            name="order"
+            onChange={handleUrl}
+            className="cursor-pointer"
+          />
           <label htmlFor="zToA">Z to A</label>
         </span>
       </div>

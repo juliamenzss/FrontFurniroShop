@@ -165,7 +165,7 @@ const LoginLayout = () => {
         <div className="pt-5 text-sm ">
           <span className="justitfy-center items-center flex font-semibold">
             Don’t have an account?{" "}
-            <p onClick={handleNavRegister} className="text-blue p-1 cursor-pointer">
+            <p onClick={handleNavRegister} className="text-blue p-1 cursor-pointer font-bold transition hover:text-slate-400">
               Sign Up
             </p>
           </span>

@@ -184,7 +184,7 @@ function RegisterLayout() {
           <p>
             Have an account?{" "}
             </p>
-            <p onClick={handleNavLogin} className="text-blue cursor-pointer">
+            <p onClick={handleNavLogin} className="text-blue cursor-pointer font-bold transition hover:text-slate-400">
               Sign In
           </p>
         </div>

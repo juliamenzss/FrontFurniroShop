@@ -13,12 +13,10 @@ function Image({img }) {
             <img
               src={img}
               alt=""
-              className="md:h-96 w-96 px-26 rounded-xl"
+              className="h-72 w-72 md:h-96 md:w-96 px-26 rounded-xl"
             />
           </div>
         </section>
-
-        
       </section>
     );
 }

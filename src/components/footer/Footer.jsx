@@ -64,7 +64,7 @@ function Footer() {
         </div>
 
         <section>
-          <div className="w-11/12 mx-auto border-t opacity-10 my-4"></div>
+          <div className="w-8/12 mx-auto border-t opacity-10 my-4"></div>
           <p className="m-2 pt-2 pb-6 font-light sm:m-8 px-10 sm:font-normal flex flex-wrap">
             2023 furnino. All rights reverved
           </p>

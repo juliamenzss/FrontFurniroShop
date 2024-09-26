@@ -46,8 +46,8 @@ function CartTotal() {
   }
 
   return (
-    <section className="my-20 w-screen flex flex-col lg:flex-row gap-4 justify-evenly xl:w-10/12">
-    <section>
+    <section className="my-20 w-screen flex flex-row gap-4 justify-evenly xl:w-10/12">
+    <section className="flex-col md:flex-row flex">
       <table className="w-full border-collapse">
         <thead className="bg-light-salmon">
           {cartItems.length !== 0 && (<tr className="">
@@ -76,8 +76,8 @@ function CartTotal() {
           ) : (
             <>
             {cartItems.map((item) => (
-              <tr key={item.id}>
-                <td className="ml-2 py-8 w-10 sm:w-24">
+              <tr key={item.id} className="">
+                <td className="ml-2 py-8 w-10 h-10 pl-2 sm:w-24">
                   <img
                     src={item.image}
                     alt={item.name}
@@ -87,8 +87,8 @@ function CartTotal() {
                 <td className="px-2 sm:px-8 text-xs text-gray-light">
                   Rs. {item.price.toFixed(2)}
                 </td>
-                <td className="py-1 mt-10 sm:w-16 sm:mt-16 text-gray-light border
-                 flex text-sm justify-between p-2 items-center rounded-lg">
+                <td className="py-1 w-14 mt-10 sm:w-16 sm:mt-[150px] bottom-0 text-gray-light border
+                 flex text-sm justify-between pr-1 pl-1 items-center rounded-lg">
                      <button
                   type="button"
                   onClick={() => dispatch(decrementQuantity(item.id))}
@@ -129,8 +129,8 @@ function CartTotal() {
       </table>
       {
         cartItems.length !== 0 &&
-        (<section className=" bg-light-salmon p-4 lg:w-72 xl:w-96 xl:pb-12 flex flex-col justify-center lg:items-center">
-          <h1 className="text-3xl font-semibold mb-2 lg:mb-14">Cart Totals</h1>
+        (<section className=" bg-light-salmon p-4 mt-20 lg:w-72 xl:w-96 xl:pb-12 flex flex-col justify-center lg:items-center md:rounded-2xl">
+          <h1 className="text-xl font-medium md:text-3xl md:font-semibold mb-2 lg:mb-6">Cart Totals</h1>
           <div className="lg:hidden border-t w-full mb-8 text-gray-light"></div>
           <div className="pb-6 flex mb-2 w-full justify-between lg:justify-around">
             <h2 className="text-sm font-medium">Subtotal</h2>
@@ -143,7 +143,7 @@ function CartTotal() {
   
   
   
-          <button onClick={handleCheckout} className="transition hover:bg-caramel hover:text-white border text-xl mb-8 py-4 px-10 rounded-xl">
+          <button onClick={handleCheckout} className="text-lg transition hover:bg-caramel hover:text-white border md:text-xl py-4 md:px-5 rounded-xl">
             {loggedUser ? "Checkout" : "Login to checkout"}
           </button>
         </section>)
